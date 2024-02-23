@@ -22,3 +22,5 @@ spec:
       nodeSelectorTerms:
         - matchExpressions:
             - {key: kubernetes.io/hostname, operator: In, values: [worker1]}
+  persistentVolumeReclaimPolicy: Delete
+  volumeMode: Filesystem
